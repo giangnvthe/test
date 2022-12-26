@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+
+#wrapper {}
+
+
+#header {
+  --height: 46px;
+  position: fixed;
+  top: 0px;
+  /* right: 0px;
+  left: 0px; */
+  width: 100%;
+  height: var(--height);
+  background-color: black;
+  box-shadow: 0 1px 10px rgba(27, 27, 27, 0.5);
+  z-index: 1;
+}
+
+#nav>li {
+  display: inline-block;
+  position: relative;
+
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 46px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: inline-block;
+
+}
+
+#nav>li:hover>a {
+  background-color: #ccc;
+  color: black;
+
+}
+
+#more>.subnav>li>a {
+  color: black;
+  width: 100%;
+  padding-left: 16px;
+  line-height: 38px;
+}
+
+#nav .subnav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  box-shadow: 0 1px 10px rgba(27, 27, 27, 0.5);
+
+}
+
+#nav .subnav li:hover a {
+  background-color: #ccc;
+  color: black;
+}
+
+
+#slider {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url('/w3.TheBand/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.search-btn {
+  float: right;
+  padding: 0 16px;
+}
+
+#header .search-btn:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+#search-icon {
+  color: white;
+  font-size: 20px;
+  line-height: 46px;
+}
+
+#more:hover .subnav {
+  display: block;
+}
+
+#slider .text-content {
+  position: absolute;
+  bottom: 46px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 0px -1px grey, 1px 0px grey, 0px 1px grey, -1px 0px grey;
+}
+
+#slider .text-heading {
+
+  margin-bottom: 20px;
+
+}
+
+
+
+#content {}
+
+
+
+#content .content-section {
+  text-align: center;
+  margin-top: 74px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+}
+
+#content .content-heading {
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#content .content-sub-heading {
+  text-align: center;
+  margin: 15px;
+  font-style: italic;
+  color: gray;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+#content .description {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+#content .members-list {
+  margin-top: 47px;
+  font-weight: 400;
+  /* overflow: hidden;  sửa lỗi cho float */
+
+}
+
+#content .member-item {
+  float: left;
+  width: calc(100%/3);
+}
+
+#content .member-ava {
+  margin-top: 15px;
+  width: 60%;
+  border-radius: 4px;
+}
+
+.tickets-section {
+  color: white;
+  padding-top: 74px;
+}
+
+
+#tickets-list {
+  color: black;
+  background-color: white;
+}
+
+.tickets-list>li {
+  border-bottom: #ddd 1px solid;
+  line-height: 39px;
+  padding-left: 16px;
+}
+
+.sold-out {
+  background-color: red;
+  color: white;
+  padding: 3px 6px;
+  margin-left: 16px;
+}
+
+.quantity {
+  float: right;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  margin: 7px 10px 0 0;
+}
+
+.places-section {
+  margin: 32px -7px 0 -7px;
+  background-color: black;
+ 
+}
+
+.place-item {
+  float: left;
+  max-width: calc(100%/3);
+  color: black;
+  padding: 0 8px;
+  
+}
+
+.place-ava {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+
+}
+.place-ava:hover {
+  opacity: 0.7;
+}
+.place-item .body {
+  background-color: white;
+  padding: 0 10px;
+}
+#footer {}
