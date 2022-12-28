@@ -20,7 +20,7 @@
         <li><a href="">Band</a></li>
         <li><a href="">Tour</a></li>
         <li><a href="">Contact</a></li>
-        <li id="more"><a href="">
+        <li id="more"><a href="#">
             More <i class="ti-angle-down"></i>
           </a>
           <ul class="subnav">
@@ -36,7 +36,7 @@
       </div>
 
       <!-- Mobile menu -->
-      <div class="menu-btn">
+      <div id="menu-btn" class="menu-btn">
         <i id="menu-icon" class="menu-icon ti-menu"></i>
       </div>
     </div>
@@ -97,8 +97,8 @@
 
             <div class="place-item">
               <img class="place-ava"
-              src="https://img.kyodonews.net/english/public/images/posts/aaa0cbacbbf7f6cee302e52e1d22ad00/photo_l.jpg"
-              alt="">
+                src="https://img.kyodonews.net/english/public/images/posts/aaa0cbacbbf7f6cee302e52e1d22ad00/photo_l.jpg"
+                alt="">
               <div class="body">
                 <h2 class="place-name"> New York</h2>
                 <p class="place-date">Fri 27 Nov 2016</p>
@@ -144,5 +144,30 @@
 
   </div>
 </body>
+<script>
+  var header = document.getElementById('header');
+  var mobileMenu = document.getElementById('menu-btn');
+  var headerHeight = header.clientHeight;
+
+
+  // đóng mở moblie menu
+  mobileMenu.onclick = function () {
+    var isClosed = header.clientHeight === headerHeight;
+    if (isClosed) {
+      mobileMenu.style.background = '#ccc';
+      mobileMenu.style.color = 'black';
+      header.style.height = 'auto';
+    } else {
+      header.style.height = null;
+      mobileMenu.style.background = 'black';
+      mobileMenu.style.color = 'white';
+
+    }
+
+
+  }
+
+
+</script>
 
 </html>
