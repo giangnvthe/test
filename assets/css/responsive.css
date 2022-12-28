@@ -1,0 +1,33 @@
+/* PC */
+@media (min-width:1024px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+
+/* Tablet */
+@media (max-width: 1023px) and (min-width:741px) {
+  .menu-btn {
+    display: none;
+  }
+}
+@media (max-width: 740px) {
+  #nav>li {
+    display: block;
+  }
+
+  #header {
+    overflow: hidden;
+
+  }
+
+  #content .content-section {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .search-btn {
+   display: none;
+  }
+}

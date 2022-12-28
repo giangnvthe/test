@@ -87,17 +87,22 @@ ul {
   list-style-type: none;
 }
 
-.search-btn {
+.search-btn , .menu-btn{
   float: right;
   padding: 0 16px;
+  cursor: pointer;
 }
 
 #header .search-btn:hover {
   background-color: red;
-  cursor: pointer;
+}
+ .menu-btn:hover {
+  background-color: #ccc;
+  color: black;
 }
 
-#search-icon {
+
+#search-icon, .menu-btn {
   color: white;
   font-size: 20px;
   line-height: 46px;
@@ -131,10 +136,12 @@ ul {
 #content .content-section {
   text-align: center;
   margin-top: 74px;
-  max-width: 800px;
+  width: 800px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 35px;
+ 
 }
 
 #content .content-heading {
